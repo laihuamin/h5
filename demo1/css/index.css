@@ -167,17 +167,135 @@ body {
 }
 
 /* static */
-.static-wraper{
+.static-wrapper{
     width: 100%;
     height: 100%;
     position: relative;
 }
-.static-wraper .header{
+.static-wrapper .header{
     width: 100%;
     height: auto;
-    margin-top: .6rem;
+    padding-top: .6rem;
 }
-.static-wraper .header-con{
-    display: inline-block;
-    
+.static-wrapper .header-con{
+    font-size: 14px;
+    text-align: left;
+    line-height: .4rem;
+    color: #ceffe3;
+    width: 3.75rem;
+    height: 1.2rem;
+    margin-left: .6rem;
+}
+.static-wrapper .middle{
+    background-image: url(../images/static-border.png);
+    background-size: 100% 100%;
+    position: relative;
+    margin: .7rem auto 0;
+    width: 5.99rem;
+    height: 6.2rem;
+}
+.static-wrapper .people-total{
+    width: 100%;
+    margin-left: .24rem;
+    line-height: .24rem;
+}
+.static-wrapper .people-num{
+    font-size: 24px;
+}
+.static-wrapper .people-desc{
+    font-size: 14px;
+    color: #ceffe3;
+}
+.static-wrapper .static-con{
+    display: flex;
+    width: 100%;
+}
+.static-wrapper .con-left{
+    flex-basis: .46rem;
+    margin-left: .56rem;
+}
+.static-wrapper .font-one{
+    width: .46rem;
+    height: .46rem;
+    margin-top: .5rem;
+    background-image: url(../images/static_level3.png);
+    background-size: 100% 100%;
+}
+.static-wrapper .font-two{
+    width: .46rem;
+    height: .46rem;
+    margin-top: .9rem;
+    background-image: url(../images/static_level2.png);
+    background-size: 100% 100%;
+}
+.static-wrapper .font-three{
+    width: .46rem;
+    height: .46rem;
+    margin-top: .9rem;
+    background-image: url(../images/static_level1.png);
+    background-size: 100% 100%;
+}
+.static-wrapper .con-last,
+.static-wrapper .con-now{
+    margin: 0 .15rem;
+    height: 5.6rem;
+    position: relative;
+    flex-basis: 1.6rem;
+}
+.static-wrapper .last-logo,
+.static-wrapper .now-logo{
+    width: 1.22rem;
+    height: .34rem;
+    background-image: url(../images/previous_period.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -.61rem;
+    bottom: .65rem;
+}
+.static-wrapper .now-logo{
+    background-image: url(../images/current_period.png);
+}
+.static-wrapper .last-data,
+.static-wrapper .now-data{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 1.1rem;
+}
+.static-wrapper .con-right{
+    flex: 1;
+    padding: .5rem .2rem;
+    box-sizing: border-box;
+}
+.static-wrapper .con-desc{
+    font-size: 14px;
+    text-align: center;
+    color: #ceffe3;
+    margin-top: 2.3rem;
+    padding-left: .05rem;
+    width: .6rem;
+    margin-left: .15rem;
+}
+.static-wrapper .bottom{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.static-wrapper .bottom-left{
+    float: left;
+    margin-top: .4rem;
+    width: 2.34rem;
+    height: .4rem;
+    background-image: url(../images/footer-left.png);
+    background-size: 100% 100%;
+}
+.static-wrapper .bottom-right{
+    float: right;
+    margin-top: .2rem;
+    width: 2.24rem;
+    height: .35rem;
+    background-image: url(../images/footer-right.png);
+    background-size: 100% 100%;
 }

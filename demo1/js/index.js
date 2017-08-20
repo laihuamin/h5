@@ -12,10 +12,18 @@ $(document).ready(function(){
         $('.time-con').text(data.time);
     }
     //static
-    function static(data){
-        if(!data){
+    function static(staticData){
+        if(!staticData){
             return;
         }
+        $('.header-con').text(staticData.title);
+        $('.people-num').text(staticData.people);
+        const block = '<span class="block"></span>';
+        const result = [];
+        staticData.data.forEach((item) => {
+            let temp = Math.floor(item / 500);
+        });
+        lastDataHtml = `<div class="last-one"></div>`
     }
     //格式化数据
     function init(data){
