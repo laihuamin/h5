@@ -6,25 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>运营日报</title>
     <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">    
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
 </head>
 <body>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">slide1</div>
-            <div class="swiper-slide">slide2</div>
+            <div class="swiper-slide">
+                <!-- home -->
+                <div class="home-wrapper">
+                    <div class="header">
+                        <div class="header-left slideInLeft animated"></div>
+                        <div class="header-right slideInRight animated"></div>
+                    </div>
+                    <div class="middle">
+                        <div class="m-sub-title rotateInDownLeft animated"></div>
+                        <div class="m-title rotateInDownRight animated"></div>
+                        <div class="m-logo slideInRight animated"></div>
+                        <div class="m-time">
+                            <div class="border-left slideInLeft animated"></div>
+                            <div class="border-middle zoomIn animated">
+                                <span class="time-con"></span>                            
+                            </div>
+                            <div class="border-right slideInRight animated"></div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-left slideInLeft animated"></div>
+                        <div class="bottom-middle slideInUp animated"></div>
+                        <div class="bottom-right slideInRight animated"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- static -->
+            <div class="swiper-slide">
+                <div class="static-wrapper">
+                    <div class="header">
+                        <p class="header-con"></p>
+                    </div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
             <div class="swiper-slide">slide3</div>
             <div class="swiper-slide">slide4</div>
             <div class="swiper-slide">slide5</div>
             <div class="swiper-slide">slide6</div>
         </div>
-        <div class="swiper-button-next"></div>
+        <footer class="btn-wrapper">
+            <div class="btn fadeInUp animated"></div>
+        </footer>
     </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/rem.js"></script>
     <script src="./js/swiper-3.4.2.min.js"></script>
     <script src="./js/swiper.animate1.0.2.min.js"></script>
-    <script src="./js/index.js"></script>    
+    <script src="./js/index.js"></script>
 </body>
 </html>

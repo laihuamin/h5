@@ -57,3 +57,28 @@ $(document).ready(function(){
     })
 });
 ```
+## 首页
+ - 数据的处理
+ ```
+ //home首页
+    function home(data){
+        if(!data){
+            return;
+        }
+    }
+    //格式化数据
+    function init(data){
+        home(data.home);
+    }
+    //请求数据
+    $.ajax({
+        url:"http://www.lhbzimo.cn:5000/",
+        method: post,
+        success: function(data){
+            init(data);
+        },
+        error: function(error){
+            console.log(error);
+        }
+    })    
+ ```

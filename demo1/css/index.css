@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 html, body {
     position: relative;
     height: 100%;
@@ -5,7 +9,7 @@ html, body {
 body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 0.14rem;
     color:#000;
     margin: 0;
     padding: 0;
@@ -15,7 +19,165 @@ body {
     height: 100%;
 }
 .swiper-slide {
-    font-size: 14px;
+    font-size: 0.14rem;
     background: #fff;
     color: #4afdbe;
+    background-image: url("../images/bg.png");
+}
+.btn-wrapper{
+    height: 1rem;
+    margin-top: -1rem;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    background-image: url("../images/arrow.png");
+    background-size: 100% 100%;
+    width: .54rem;
+    height: .88rem;
+    margin-left: -.27rem;
+    border: none;
+    -webkit-animation-delay: 2s;
+}
+
+/* home */
+
+.home-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.home-wrapper .header{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.home-wrapper .header-left{
+    width: 3.12rem;
+    height: 2.11rem;
+    background-image: url("../images/home-top-shading.png");
+    background-size: 100% 100%;
+}
+.home-wrapper .header-right{
+    width: 1.22rem;
+    height: 1.22rem;
+    background-size: 100% 100%;
+    background-image: url("../images/home-head-right.png");
+    position: absolute;
+    bottom: 0;
+    right: .14rem 
+}
+.home-wrapper .middle{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: .29rem;
+}
+.home-wrapper .m-sub-title{
+    background-image: url("../images/logo.png");
+    background-size: 100% 100%;
+    margin: .1rem 0 0 1.17rem;
+    width: 2.34rem;
+    height: .34rem;
+    -webkit-animation-delay: 2s;
+}
+.home-wrapper .m-title{
+    background-image: url("../images/title.png");
+    background-size: 100% 100%;
+    width: 4.57rem;
+    height: 1.18rem;
+    margin: .1rem 0 0 1.01rem;
+    -webkit-animation-delay: 1s;
+}
+.home-wrapper .m-logo{
+    background-image: url("../images/home-right-shading.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    width: 1.9rem;
+    height: .45rem;
+    top: .33rem;
+}
+.home-wrapper .m-time{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: .27rem;
+}
+.home-wrapper .border-left{
+    background-image: url("../images/left-border.png");
+    background-size: 100% 100%;
+    width: 2.82rem;
+    height: 0.98rem;
+}
+.home-wrapper .border-middle{
+    background-image: url("../images/border.png");
+    background-size: 100% 100%;
+    position: absolute;
+    text-align: center;
+    line-height: .63rem;
+    height: .63rem;
+    width: 5.08rem;
+    top: .20rem;
+    left: .8rem;
+    color: #4afdbe;
+    -webkit-animation-delay: 1.5s;
+}
+.home-wrapper .border-right{
+    background-image: url("../images/right-border.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: .28rem;
+    width: 1.72rem;
+    height: 1.12rem;
+}
+.home-wrapper .bottom{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: .5rem;
+}
+.home-wrapper .bottom-left{
+    float: left;
+    margin: .6rem 0 0 .56rem;
+    display: inline-block;
+    width: .61rem;
+    height: 2.99rem;
+    background-image: url(../images/footer-left-shading.png);
+    background-size: 100% 100%;
+}
+.home-wrapper .bottom-middle{
+    float: left;
+    width: 1.4rem;
+    height: 4.57rem;
+    margin: -.31rem 0 0 .2rem;
+    background-image: url(../images/footer-middle-shading.png);
+    background-size: 100% 100%;
+}
+.home-wrapper .bottom-right{
+    width: 3.33rem;
+    height: 3.49rem;
+    float: right;
+    margin-top: .78rem;
+    background-image: url(../images/footer-right-shading.png);
+    background-size: 100% 100%;
+}
+
+/* static */
+.static-wraper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.static-wraper .header{
+    width: 100%;
+    height: auto;
+    margin-top: .6rem;
+}
+.static-wraper .header-con{
+    display: inline-block;
+    
 }
