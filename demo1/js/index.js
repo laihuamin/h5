@@ -7,7 +7,7 @@ $(document).ready(function(){
             swiperAnimateCache(swiper); //隐藏动画元素 
             swiperAnimate(swiper); //初始化完成开始动画
         }, 
-        nSlideChangeEnd: function(swiper){ 
+        onSlideChangeEnd: function(swiper){ 
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }       
     })
@@ -25,14 +25,15 @@ $(document).ready(function(){
         }
         $('.header-con').text(staticData.title);
         $('.people-num').text(staticData.people);
-        const block = '<div class="block flash animated"></div>';
-        
+        function block(num, i){ 
+            return `<div class="block ani" swiper-animate-duration="0.5s" swiper-animate-effect=fadeIn swiper-animate-delay="${0.5+(num - i) * 0.1}s"></div>`;
+        }
         const result = [];
         staticData.data.forEach((item) => {
             let resultTemp = `${item}`;   
             let temp = Math.floor(item / 5000);
             for(let i = 0; i < temp; i++){
-                resultTemp += block;
+                resultTemp += block(temp, i);
             }
             result.push(resultTemp);
         });
