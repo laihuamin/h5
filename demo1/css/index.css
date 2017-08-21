@@ -81,7 +81,6 @@ body {
     margin: .1rem 0 0 1.17rem;
     width: 2.34rem;
     height: .34rem;
-    -webkit-animation-delay: 2s;
 }
 .home-wrapper .m-title{
     background-image: url("../images/title.png");
@@ -89,7 +88,6 @@ body {
     width: 4.57rem;
     height: 1.18rem;
     margin: .1rem 0 0 1.01rem;
-    -webkit-animation-delay: 1s;
 }
 .home-wrapper .m-logo{
     background-image: url("../images/home-right-shading.png");
@@ -123,7 +121,6 @@ body {
     top: .20rem;
     left: .8rem;
     color: #4afdbe;
-    -webkit-animation-delay: 1.5s;
 }
 .home-wrapper .border-right{
     background-image: url("../images/right-border.png");
@@ -185,6 +182,7 @@ body {
     width: 3.75rem;
     height: 1.2rem;
     margin-left: .6rem;
+    -webkit-animation-delay: 2s;
 }
 .static-wrapper .middle{
     background-image: url(../images/static-border.png);
@@ -263,6 +261,22 @@ body {
     align-items: flex-end;
     position: absolute;
     bottom: 1.1rem;
+}
+.static-wrapper .last-one,
+.static-wrapper .last-two,
+.static-wrapper .now-one,
+.static-wrapper .now-two{
+    flex: 1;
+    height: auto;
+    text-align: center;
+}
+.static-wrapper .block{
+    width: .76rem;
+    height: .09rem;
+    background: #4afdbe;
+    margin-top: .02rem;
+    margin-bottom: .02rem;
+    -webkit-animation-delay: 2s;
 }
 .static-wrapper .con-right{
     flex: 1;
