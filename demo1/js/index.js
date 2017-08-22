@@ -92,12 +92,27 @@ $(document).ready(function(){
         console.log(result);
         $('.top-group').html(result);
     }
+    // analysis
+    function analysis(data){
+        if(!data){
+            return;
+        }
+        const img = function(item){
+            return `<img class="img-item" src="${item}"/>`
+        }
+        $('.img-one').html(img(data.imgs[0]));
+        $('.img-two').html(img(data.imgs[1]));
+        $('.ana-title').text(data.title);
+        $('.ana-sub-title').text(data.subtitle)
+        $('.ana-con').text(data.content);
+    }
     //格式化数据
     function init(data){
         home(data.home);
         static(data.static);
         popularity(data.popularity);
         top(data.top);
+        analysis(data.analysis);
     }
     //请求数据
     $.ajax({
