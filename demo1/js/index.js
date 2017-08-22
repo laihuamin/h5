@@ -67,11 +67,37 @@ $(document).ready(function(){
         console.log(result);
         $('.pop-group').html(result);
     }
+    //top
+    function top(data){
+        if(!data){
+            return;
+        }
+        $('.top-title').text(data.title);
+        const li = function(item){
+            return `<li class="pop-item ani" swiper-animate-effect=fadeIn swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <div class="item-left ani" swiper-animate-effect=flip swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+                <div class="left-top ani" swiper-animate-effect=slideInLeft swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">${item.title}</div>
+                <div class="left-bottom ani" swiper-animate-effect=slideInLeft swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">公众号：${item.gongzhonghao}</div>
+            </div>
+            <div class="item-right" >
+                <div class="right-top ani" swiper-animate-effect=slideInRight swiper-animate-duration="0.5s" swiper-animate-delay="1s">参与人数</div>
+                <div class="right-bottom ani" swiper-animate-effect=slideInRight swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">${item.number}</div>
+            </div>
+        </li>`;
+        }
+        let result = '';
+        data.data.forEach((item) => {
+            result += li(item);
+        })
+        console.log(result);
+        $('.top-group').html(result);
+    }
     //格式化数据
     function init(data){
         home(data.home);
         static(data.static);
         popularity(data.popularity);
+        top(data.top);
     }
     //请求数据
     $.ajax({
