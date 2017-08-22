@@ -47,7 +47,7 @@ $(document).ready(function(){
         if(!data){
             return;
         }
-        $('.title').text(data.title);
+        $('.pop-title').text(data.title);
         const li = function(item){
             return `<li class="pop-item ani" swiper-animate-effect=fadeIn swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
             <div class="item-left ani" swiper-animate-effect=flip swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
