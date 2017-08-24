@@ -98,7 +98,7 @@ $(document).ready(function(){
             return;
         }
         const img = function(item){
-            return `<img class="img-item" src="${item}"/>`
+            return `<img class="img-item ani" swiper-animate-effect=fadeInDown swiper-animate-duration="0.5s" swiper-animate-delay="1s" src="${item}"/>`
         }
         $('.img-one').html(img(data.imgs[0]));
         $('.img-two').html(img(data.imgs[1]));

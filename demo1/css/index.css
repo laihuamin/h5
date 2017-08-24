@@ -26,9 +26,10 @@ body {
 }
 .btn-wrapper{
     height: 1rem;
-    margin-top: -1rem;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 .btn{
