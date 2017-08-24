@@ -106,6 +106,24 @@ $(document).ready(function(){
         $('.ana-sub-title').text(data.subtitle)
         $('.ana-con').text(data.content);
     }
+    // fans
+    const fans = function(data) {
+        if(!data){
+            return;
+        }
+        const id = [];
+        const gongzhonghao = [];
+        const number = [];
+        data.data.forEach((item) => {
+            id.push(item.id);
+            gongzhonghao.push(item.gongzhonghao);
+            number.push(item.number);
+        })
+        console.log(id);
+        const li = function(direction, data){
+            return `<li class="${direction}-item">${data}</li>`
+        }
+    }
     //格式化数据
     function init(data){
         home(data.home);
@@ -113,6 +131,7 @@ $(document).ready(function(){
         popularity(data.popularity);
         top(data.top);
         analysis(data.analysis);
+        fans(data.fans);
     }
     //请求数据
     $.ajax({
