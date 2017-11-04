@@ -17,11 +17,39 @@
 } */
 
 .radar {
-    width: 750px;
-    height: 750px;
+    width: 650px;
+    height: 650px;
     position: relative;
     margin: 0 auto;
 }
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    animation-duration: 5s;    
+    -webkit-animation-duration: 5s; /*动画持续时间*/
+}
+.wrapper:after {
+    content: ' ';
+    display: block;
+    background-image: linear-gradient(44deg, rgba(0, 255, 51, 0) 50%, #d97634 100%);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: radar-beam 5s infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom right;
+    border-radius: 100% 0 0 0;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+  
 
 .circle {
     border: 2px solid #d97634;
@@ -105,6 +133,22 @@
     opacity: 1; /*结尾状态 透明度为1*/
     }
 }
+@keyframes radar-beam {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes radar-beam {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .img-item {
     width: 0.88rem;
     height: .88rem;
