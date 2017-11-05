@@ -9,7 +9,7 @@ class Radar {
         this.imgSizeGroup = [];
     };
     init() {
-        this.imgSizeGroup();
+        this.imgSizeGroup;
     };
     //给每个头像的大小随机,以及角度
     imgSize() {
@@ -23,12 +23,13 @@ class Radar {
         //在0到600之间随意取半径
         let rad = Math.round(Math.random() * 600);
         this.rad.push(rad);
+        console.log(1);
     }
     //获取n个长宽高
     imgSizeGroup () {
         this.imgGroup = document.getElementsByClassName('img-item');
         for(let i = 0; i < this.imgGroup.length; i++) {
-            this.imgSize();
+            this.imgSize;
         }
     }
     //生成class
