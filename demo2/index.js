@@ -6,11 +6,14 @@ function Radar() {
     this.imgGroup = [];
     this.top = [];
     this.left = [];
+    this.sheet = [];
 }
 //入口函数
 Radar.prototype.init = function() {
     this.imgSizeGroup();
     this.prodClass();
+    this.setClass();
+    console.log(this);
 }
 //图片任意大小
 Radar.prototype.imgSizeGroup = function() {
@@ -48,16 +51,16 @@ Radar.prototype.prodClass = function() {
 }
 //给每个class添加属性
 Radar.prototype.setClass = function() {
+    //获取样式表
+    var sheets = document.styleSheets[0];
+    //往样式表中插入样式
     for(let i = 0; i < this.imgGroup.length; i++) {
-        this.imgGroup[i].style = {
-            width: `${this.width[i]}px`,
-            height: `${this.height[i]}px`,
-            top: 0;
-            left: 50%;
-            transform: translate3d(-50%, -50%, 0);
-            animation: img-big-fourth 6s infinite linear;
-            animation-delay: 3s;
-        }
+        sheets.insertRule(`.img-${i} {
+            width: ${this.width[i]}px;
+            height: ${this.height[i]}px;
+            top: ${this.top[i]}%;
+            left: ${this.left[i]}%;
+        }`, 0);
     }
 }
 
