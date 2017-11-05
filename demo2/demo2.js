@@ -6,9 +6,10 @@ class Radar {
         this.height = [];
         this.deg = [];
         this.rad = [];
+        this.imgSizeGroup = [];
     };
     init() {
-        this.imgSize();
+        this.imgSizeGroup();
     };
     //给每个头像的大小随机,以及角度
     imgSize() {
@@ -25,11 +26,20 @@ class Radar {
     }
     //获取n个长宽高
     imgSizeGroup () {
-        const imgGroup = document.getElementsByClassName('img-item');
-        for(let i = 0; i < imgGroup.length; i++) {
+        this.imgGroup = document.getElementsByClassName('img-item');
+        for(let i = 0; i < this.imgGroup.length; i++) {
             this.imgSize();
         }
     }
+    //生成class
+    prodClass () {
+        for(let i = 0; i < this.imgGroup.length; i++) {
+            let className = 'img-' + i;
+            this.imgGroup[i].classList.add(className);
+        }
+    }
+    //给每个class添加属性
+    
 }
 
 const radar = new Radar();
