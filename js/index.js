@@ -362,7 +362,7 @@ $(document).ready(function () {
 		loadBox.show();
 		$('.congratulate').hide();
 		$('.myphoto .btnbox').hide();
-		// $(".move").removeClass('active');
+		$(".move").removeClass('active');
 		var shareContent = $(".myphoto"); //需要截图的包裹的DOM 元素
 		html2canvas(document.querySelector(".myphoto"), {
 			logging: false,
