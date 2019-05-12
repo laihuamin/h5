@@ -369,7 +369,7 @@ $(document).ready(function () {
 			useCORS: true
 		}).then(function (canvas) {
 			loadBox.hide();
-			var base64 = canvas.toDataURL("image/png", 1);
+			var base64 = canvas.toDataURL("image/jpeg", 1);
 			$(".imgbox img").attr("src", base64);
 			// $(".imgbox").appendChild(canvas);
 			// 上传服务器。返回一张绝对地址图片
