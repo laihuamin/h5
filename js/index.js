@@ -128,12 +128,15 @@ $(document).ready(function () {
 	//显示弹框
 	function showBg() {
 		$('.bg').show();
+		console.log('背景弹框显示');
 	}
 	function showPerson() {
 		$('.person').show();
+		console.log('人物弹框显示');
 	}
 	function showPattern() {
 		$('.pattern').show();
+		console.log('图案弹框显示');
 	}
 	// 隐藏弹框
 	function hideBg() {
