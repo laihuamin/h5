@@ -25,9 +25,8 @@
 .choosealbum .btnCamera{display: block;background-image: url(../images/btn-submit.png);width: 3.05rem;height: .86rem;margin:.25rem auto 0;}
 
 .myphoto{position: absolute;width: 100%;height: 100%;overflow: hidden;}
-.myphoto .photobox{width: 100%;height: 9.8rem;position: absolute;top: 50%;margin-top: -4.9rem;}
-.myphoto .photobox .shell{background-image: url(../images/shellbg.png);width: 5.72rem;height: 7.85rem;margin:.55rem auto 0;}
-.myphoto .photobox .picdecorate{display: block;width: 7.5rem;height: 9.8rem;position: absolute;left:0;top:0;pointer-events:none;}
+.myphoto .photobox{width: 100%}
+.myphoto .photobox .myphoto-bg{width: 100%;position: absolute;left: 0;top: 0;}
 
 .myphoto .btnbox{width: 100%;height: .85rem;position: absolute;left:0;bottom:.2rem;text-align: center;}
 /*.myphoto .btnbox .btn-prev{display:inline-block;background-image: url(../images/btn-prev.png);width: 2.5rem;height: .85rem;background-color: rgba(104,10,11,.7);border-radius:.2rem;margin-right: .5rem;}
@@ -79,14 +78,23 @@
     height: 2.75rem;
 }
 
+.congratulatetitle .img-bg {
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    margin: 1rem 0.5rem;
+}
+.congratulatetitle .img-bg img {
+    width: 2.75rem;
+}
+
 .wid1{width: 4.18rem;}
 .wid2{width: 4.18rem;}
 .wid3{width: 3.38rem;}
 
 
 .congratulate .congratulatetitle .btn-skip{display: block;background-image: url(../images/skip.png);width: 3.26rem;height: .82rem;margin:0 auto;}
-.finalphotopage{background-image: url(../images/loadingpage.png);position: absolute;width: 100%;height: 100%;overflow: hidden;}
-.finalphotopage .imgbox{width: 100%;height: 100%;}
+.finalphotopage{position: absolute; width: 100%; position: absolute; left: 0; top: 0; z-index: 100;}
+.finalphotopage .imgbox{width: 100%;}
 .finalphotopage .imgbox img{width: 100%;}
 
 

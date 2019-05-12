@@ -85,7 +85,7 @@ $(document).ready(function () {
 	function init_handler() {
 		//		icom.fadeOut(loadBox,500);
 		// setTimeout(albumshow,2000);
-		initswiper();
+		// initswiper();
 
 		$('.guide .btn-close').on("click", guide_hide);
 
@@ -97,7 +97,8 @@ $(document).ready(function () {
 		$('.bgClose').on('click', hideBg);
 		$('.personClose').on('click', hidePerson);
 		$('.patternClose').on('click', hidePattern);
-		$('.congratulate p').on('click', confirmTitle); //确定一个title
+		$('.congratulate .img-bg').on('click', confirmBg); //确定一个title
+		$('.congratulate .img-item').on('click', confirmTitle); //确定一个title
 		btnSubmit.on('touchend', btnSubmit_click);
 		// init1();
 		// monitor_handler();
@@ -148,29 +149,30 @@ $(document).ready(function () {
 	var increaseId = 0; //自增id
 	var selectId = 0; //当前选取的id
 	var item = {}; //当前选取的对象
+	// 确定背景
+	function confirmBg() {
+		icom.fadeOut($('.congratulate'));
+		var src = $(this).find("img").attr("src");
+		$('.myphoto-bg').attr({
+			src,
+		});
+		icom.fadeIn($('.myphoto-bg'));
+	}
 	function confirmTitle() {
 		increaseId++;
 		var left = ($(window).width() - 209) / 2; //初始化定位
 		var top = ($(window).height() - 209) / 2;
 		icom.fadeOut($('.congratulate '))
-		// $(".myphoto .imgbox").html("");
 		//添加图片编辑事件
-		// elelayer=$('<span class="move active" > <a class="close"></a><a class="rotate"></a><a class="resize"></a></span>').appendTo(".myphoto .imgbox");
 		elelayer = $('<span data-id=' + increaseId + ' class="move active" style="left:' + left + 'px;top:' + top + 'px"> <a class="close"></a><a class="rotate"></a></span>').appendTo(".myphoto .imgbox");
 		var id = $(this).data("id");
 		var src = $(this).find("img").attr("src");
-		console.log($(this));
 		imgChild = $('<img/>').attr({
 			src: src,
-			crossorigin: 'anonymous'
 		}).appendTo(elelayer).addClass("wid" + id);
-		// var x = $(this).offset().left;
-		// var y = 300;
 		widthOrg = elelayer.find("img").width();
 		heightOrg = elelayer.find("img").height();
-		console.log(widthOrg)
-		console.log(heightOrg)
-
+		// 初始化参数
 		var data = {
 			id: increaseId,
 			width: widthOrg,
@@ -195,11 +197,6 @@ $(document).ready(function () {
 			r: Math.sqrt(widthOrg * widthOrg + heightOrg * heightOrg) / 2 //对角线的半
 		}
 		itemList[itemList.length] = data;
-
-		console.log($(".imgbox").find('.move'))
-
-
-
 	}
 
 
@@ -368,7 +365,7 @@ $(document).ready(function () {
 			useCORS: true
 		}).then(function (canvas) {
 			loadBox.hide();
-			var base64 = canvas.toDataURL("image/jpeg", 1);
+			var base64 = canvas.toDataURL("image/png", 1);
 			$(".imgbox img").attr("src", base64);
 			// $(".imgbox").appendChild(canvas);
 			// 上传服务器。返回一张绝对地址图片
