@@ -369,8 +369,7 @@ $(document).ready(function () {
 		}).then(function (canvas) {
 			loadBox.hide();
 			var base64 = canvas.toDataURL("image/jpeg", 1);
-			// $(".imgbox img").attr("src", base64);
-			console.log(base64);
+			$(".imgbox img").attr("src", base64);
 			// $(".imgbox").appendChild(canvas);
 			// 上传服务器。返回一张绝对地址图片
 			// icom.canvas_send(canvas,image_combine_complete,'loop_test','png');
