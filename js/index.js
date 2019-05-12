@@ -83,7 +83,6 @@ $(document).ready(function () {
 
 	//----------------------------------------页面逻辑代码----------------------------------------
 	function init_handler() {
-		console.log('init handler');
 		//		icom.fadeOut(loadBox,500);
 		// setTimeout(albumshow,2000);
 		initswiper();
@@ -91,10 +90,17 @@ $(document).ready(function () {
 		$('.guide .btn-close').on("click", guide_hide);
 
 		// $('.myphoto .btn-prev').on('click',btnPrev);//上一步
-		$('.myphoto .btn-choose').on('click', btnNext); //祝福语显示
+		// $('.myphoto .btn-choose').on('click', btnNext); //祝福语显示
+		$('.myphoto .btn-bg').on('click', showBg); //选择背景图
+		$('.myphoto .btn-person').on('click', showPerson); // 选择人物
+		$('.myphoto .btn-pattern').on('click', showPattern); // 选择图案
+		$('.bgClose').on('click', hideBg);
+		$('.personClose').on('click', hidePerson);
+		$('.patternClose').on('click', hidePattern);
 		$('.congratulate p').on('click', confirmTitle); //确定一个title
-		init1();
-		monitor_handler();
+		btnSubmit.on('touchend', btnSubmit_click);
+		// init1();
+		// monitor_handler();
 	} //end func
 	//loading加载完，选择相册模板页显示
 	function albumshow() {
@@ -118,8 +124,26 @@ $(document).ready(function () {
 	function btnNext() {
 		$('.congratulate').show();
 	}
-	//确定一个title
-
+	//显示弹框
+	function showBg() {
+		$('.bg').show();
+	}
+	function showPerson() {
+		$('.person').show();
+	}
+	function showPattern() {
+		$('.pattern').show();
+	}
+	// 隐藏弹框
+	function hideBg() {
+		icom.fadeOut($('.bg'))
+	}
+	function hidePerson() {
+		icom.fadeOut($('.person'))
+	}
+	function hidePattern() {
+		icom.fadeOut($('.pattern'))
+	}
 	var itemList = []; //储存item对象
 	var increaseId = 0; //自增id
 	var selectId = 0; //当前选取的id
@@ -137,7 +161,8 @@ $(document).ready(function () {
 		var src = $(this).find("img").attr("src");
 		console.log($(this));
 		imgChild = $('<img/>').attr({
-			src: src
+			src: src,
+			crossorigin: 'anonymous'
 		}).appendTo(elelayer).addClass("wid" + id);
 		// var x = $(this).offset().left;
 		// var y = 300;
@@ -283,18 +308,6 @@ $(document).ready(function () {
 		);
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
 	//初始化swiper
 	function initswiper() {
 		myswiper = new Swiper('.choosealbum .swiper-container', {
@@ -328,9 +341,6 @@ $(document).ready(function () {
 		fileInput.off().on('change', file_select);
 		btnCamera.off().on('touchend', btnCamera_click);
 		btnSubmit.on('touchend', btnSubmit_click);
-		console.log('canvasScale', canvasScale);
-		console.log('imgShell.width()', imgShell.width());
-		console.log('imgShell.height()', imgShell.height());
 		imgCanvas = $('<canvas></canvas>').attr({
 			width: imgShell.width() * canvasScale,
 			height: imgShell.height() * canvasScale,
@@ -349,7 +359,6 @@ $(document).ready(function () {
 
 	//图片确定按钮，图片编辑步骤控制
 	function btnSubmit_click(e) {
-
 		loadBox.show();
 		$('.congratulate').hide();
 		$('.myphoto .btnbox').hide();
@@ -360,7 +369,9 @@ $(document).ready(function () {
 		}).then(function (canvas) {
 			loadBox.hide();
 			var base64 = canvas.toDataURL("image/jpeg", 1);
-			$(".imgbox img").attr("src", base64);
+			// $(".imgbox img").attr("src", base64);
+			console.log(base64);
+			// $(".imgbox").appendChild(canvas);
 			// 上传服务器。返回一张绝对地址图片
 			// icom.canvas_send(canvas,image_combine_complete,'loop_test','png');
 			icom.fadeIn($(".finalphotopage"), 100);

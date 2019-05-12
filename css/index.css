@@ -24,7 +24,7 @@
 .choosealbum .swiper-container .swiper-slide-active{box-shadow:0 0 .32rem .13rem rgba(209,187,118,.86);}
 .choosealbum .btnCamera{display: block;background-image: url(../images/btn-submit.png);width: 3.05rem;height: .86rem;margin:.25rem auto 0;}
 
-.myphoto{background-image: url(../images/loadingpage.png);position: absolute;width: 100%;height: 100%;overflow: hidden;}
+.myphoto{position: absolute;width: 100%;height: 100%;overflow: hidden;}
 .myphoto .photobox{width: 100%;height: 9.8rem;position: absolute;top: 50%;margin-top: -4.9rem;}
 .myphoto .photobox .shell{background-image: url(../images/shellbg.png);width: 5.72rem;height: 7.85rem;margin:.55rem auto 0;}
 .myphoto .photobox .picdecorate{display: block;width: 7.5rem;height: 9.8rem;position: absolute;left:0;top:0;pointer-events:none;}
@@ -37,14 +37,47 @@
 
 
 
-.congratulate{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0,.8);z-index: 5;}
-.congratulate .congratulatetitle{position: absolute;top:50%;margin-top:-4.9rem ;width: 100%;height: 9.8rem;}
-.congratulate .congratulatetitle .choosetitle{background-image: url(../images/choosetitle.png);width: 4.05rem;height: .49rem;margin:.78rem auto 1.18rem;}
-.congratulate .congratulatetitle p{margin:0 auto;}
-.congratulate .congratulatetitle p img{width: 100%;height: 100%;}
-.congratulate .congratulatetitle .title1{width: 4.18rem;height: .91rem;margin-bottom: .48rem;}
-.congratulate .congratulatetitle .title2{width: 4.18rem;height: 1.4rem;margin-bottom: .29rem;}
-.congratulate .congratulatetitle .title3{width: 3.38rem;height: 1.57rem;margin-bottom: 1.46rem;}
+.bg, .person, .pattern{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0,.8);z-index: 5;}
+.congratulatetitle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem .5rem 0 0;
+}
+.congratulatetitle .choosetitle{
+    width: 100%;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    font-size: 0.36rem;
+}
+.congratulatetitle .congratulate-btn {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    font-size: .24rem;
+}
+.congratulatetitle  .img-wrap {
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 4.5rem;
+}
+.congratulatetitle .img-item {
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    margin: 1rem 0.5rem;
+    height: 2.75rem;
+}
+.congratulatetitle .img-item img {
+    width: 2.75rem;
+    height: 2.75rem;
+}
 
 .wid1{width: 4.18rem;}
 .wid2{width: 4.18rem;}
@@ -94,6 +127,11 @@
 .myphoto .move .close{position: absolute;left: -.3rem;bottom: -.3rem;z-index: 2;background-image: url(../images/photo/remove.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
 .myphoto .move .rotate{position: absolute;right: -.3rem;top: -.3rem;z-index: 2;background-image: url(../images/photo/rotate.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
 .myphoto .move .resize{position: absolute;right: -.3rem;top: -.3rem;z-index: 2;background-image: url(../images/photo/resize.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
+
+
+.btn-bg,.btn-person,.btn-pattern,.btn-finish {
+    display:inline-block;background:red;width: 1.5rem;height: 1rem;margin-right: .27rem;color: #fff;text-align: center;line-height: 1rem;
+}
 
 
 /*---------------------------------------- 15:9 android 微信 && 16:9 浏览器----------------------*/

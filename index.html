@@ -23,16 +23,19 @@ ibase.load('css/index.css');//无缓存加载文件
 
     <section class="myphoto ">
         <div class="photobox">
-            <div class="shell"></div>
-            <img src="images/picmask1.png" class="picdecorate"/>
+            <!-- <div class="shell"></div> -->
         </div>
         <div class="imgbox "></div>
         <div class="btnbox">
-                <span class="btn-choose"></span>
-                <span class="btn-comp"></span>
+            <!-- <span class="btn-choose"></span> -->
+            <span class="btn-bg">选择背景</span>
+            <span class="btn-person">选择人物</span>
+            <span class="btn-pattern">选择图案</span>
+            <!-- <a class="btn-comp btnSubmit">完成</a> -->
+            <a class="btn-finish btnSubmit">完成</a>
         </div>
 
-        <div class="guide  hide">
+        <div class="guide hide">
             <div class="txt"></div>
             <a class="btn-close  close"></a>
         </div>
@@ -65,13 +68,40 @@ ibase.load('css/index.css');//无缓存加载文件
         <div class="txt1"></div>
         <div class="firework"></div>
     </section>
-    <section class="congratulate hide">
+    <section class="bg congratulate hide">
         <div class="congratulatetitle">
-            <div class="choosetitle"></div>
-            <p class="title1" data-id="1"><img src="images/photo/bless-txt1.png" ></p>
-            <p class="title2" data-id="2"><img src="images/photo/bless-txt2.png" ></p>
-            <p class="title3" data-id="3"><img src="images/photo/bless-txt3.png" ></p>
-            <a class="btn-skip btnSubmit"></a>
+            <div class="choosetitle">请选择背景</div>
+            <div class="congratulate-btn bgClose">关闭</div>
+            <div class="img-wrap">
+                <!-- <p class="title1" data-id="1"><img src="images/photo/bless-txt1.png" ></p> -->
+                <p class="img-item" data-id="1"><img src=""></p>
+                <p class="img-item" data-id="2"><img src="images/photo/bless-txt2.png" ></p>
+                <p class="img-item" data-id="3"><img src="images/photo/bless-txt3.png" ></p>
+                <p class="img-item" data-id="4"><img src="images/title1.png" ></p>
+            </div>
+            <!-- <a class="btn-skip btnSubmit"></a> -->
+        </div>
+    </section>
+    <section class="person congratulate hide">
+        <div class="congratulatetitle">
+            <div class="choosetitle">请选择人物</div>
+            <div class="congratulate-btn personClose">关闭</div>
+            <p class="img-item" data-id="1"><img src="images/photo/bless-txt1.png" ></p>
+            <p class="img-item" data-id="2"><img src="images/photo/bless-txt2.png" ></p>
+            <p class="img-item" data-id="3"><img src="images/photo/bless-txt3.png" ></p>
+            <p class="img-item" data-id="4"><img src="images/title1.png" ></p>
+            <!-- <a class="btn-skip btnSubmit"></a> -->
+        </div>
+    </section>
+    <section class="pattern congratulate hide">
+        <div class="congratulatetitle">
+            <div class="choosetitle">请选择图案</div>
+            <div class="congratulate-btn patternClose">关闭</div>
+            <p class="img-item" data-id="1"><img src="images/photo/bless-txt1.png" ></p>
+            <p class="img-item" data-id="2"><img src="images/photo/bless-txt2.png" ></p>
+            <p class="img-item" data-id="3"><img src="images/photo/bless-txt3.png" ></p>
+            <p class="img-item" data-id="4"><img src="images/title1.png" ></p>
+            <!-- <a class="btn-skip btnSubmit"></a> -->
         </div>
     </section>
     <section class="finalphotopage hide">
