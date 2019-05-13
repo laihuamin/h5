@@ -48,9 +48,10 @@
 }
 .congratulatetitle .congratulate-btn {
     position: absolute;
-    top: .4rem;
+    top: .1rem;
     right: .4rem;
     font-size: .24rem;
+    
 }
 .congratulatetitle  .img-wrap {
     overflow-y: scroll;
@@ -63,7 +64,7 @@
 .congratulatetitle .img-item {
     flex: 0 0 2.75rem;
     width: 2.75rem;
-    margin: 1rem 0.5rem;
+    margin: 0.2rem 0.5rem;  
     height: 2.75rem;
 }
 .congratulatetitle .img-item img {
@@ -74,7 +75,7 @@
 .congratulatetitle .img-bg {
     flex: 0 0 2.75rem;
     width: 2.75rem;
-    margin: 1rem 0.5rem;
+    margin: 0.2rem 0.5rem;
 }
 .congratulatetitle .img-bg img {
     width: 2.75rem;
