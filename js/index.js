@@ -35,39 +35,19 @@ $(document).ready(function () {
 
 	//----------------------------------------加载页面图片----------------------------------------
 	function load_handler() {
-		var loader = new PxLoader();
-		loader.addImage('images/common/turn_phone.png');
-		loader.addImage('images/albumtips.png');
-		loader.addImage('images/btn-next.png');
-		loader.addImage('images/btn-prev.png');
-		loader.addImage('images/btn-submit.png');
-		loader.addImage('images/choosetitle.png');
-		loader.addImage('images/loadingpage.png');
-		loader.addImage('images/loadingpic.png');
-		loader.addImage('images/loadingpic1.png');
-		loader.addImage('images/loadingtxt.png');
-		loader.addImage('images/pic1.png');
-		loader.addImage('images/picmask1.png');
-		loader.addImage('images/shellbg.png');
-		loader.addImage('images/skip.png');
-		loader.addImage('images/title1.png');
-		loader.addImage('images/title2.png');
-		loader.addImage('images/title3.png');
-		loader.addImage('images/title4.png');
-		loader.addImage('images/winebottle.png');
-
+		// var loader = new PxLoader();
 		//实际加载进度
 		//		loader.addProgressListener(function(e) {
 		//			var per=Math.round(e.completedCount/e.totalCount*50);
 		//			loadPer.html(per+'%');
 		//		});
 
-		loader.addCompletionListener(function () {
+		// loader.addCompletionListener(function () {
 			init_handler();
 			//			load_timer(50);//模拟加载进度
-			loader = null;
-		});
-		loader.start();
+			// loader = null;
+		// });
+		// loader.start();
 	} //end func
 
 	//模拟加载进度

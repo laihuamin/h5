@@ -1,12 +1,5 @@
 /* ---------------------------------------- 默认css针对16:9标准比例屏幕微信----------------------------------------*/
 .hide{display: none;}
-.loadingpage{background-image: url(../images/loadingpage.png);position: absolute;width: 100%;height: 100%;overflow: hidden;}
-.loadingpage .loading-pic{background-image: url(../images/loadingpic.png);width: 3.06rem;height: 3.77rem;margin: 1.48rem auto 0;}
-.loadingpage .loading-box{width: 6.12rem;margin: .76rem auto 0;}
-.loadingpage .loading-box .wine-bottle{background-image: url(../images/winebottle.png);width: 2.03rem;height: 1.92rem;animation: wine-bottle-move 2s linear forwards;}
-.loadingpage .loading-box .progress-bar{width: 6.12rem;height: .15rem;border-radius: .1rem;background-color: #fff;}
-.loadingpage .loading-box .progress-mask{height: 100%;border-radius: .1rem;background-color: #eecc90;animation: progressmove 2s linear;}
-.loadingpage .loading-box .loading-txt{background-image: url(../images/loadingtxt.png);width: 1.01rem;height: .19rem;margin:.2rem auto 0;}
 @keyframes progressmove{
     0%{width: 0%;}
     100%{width:100%;}
@@ -92,34 +85,10 @@
 .wid3{width: 3.38rem;}
 
 
-.congratulate .congratulatetitle .btn-skip{display: block;background-image: url(../images/skip.png);width: 3.26rem;height: .82rem;margin:0 auto;}
 .finalphotopage{position: absolute; width: 100%; height: 100%;left: 0; top: 0; z-index: 110;}
 .finalphotopage .imgbox{position: absolute; width: 12rem; left: 50%; height: 50%; transform: translate3d(-50%, -50%, 0)}
 .finalphotopage .imgbox img{width: 12rem;}
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
-
-
-.index{background-image: url(../images/index/bg.jpg);position: absolute;width: 100%;height: 100%;left: 0;top;0;}
-.index .bgline{background-image: url(../images/index/bg-line.png);width: 100%;height: 11.45rem;background-size: 100% auto;position: absolute;left: 0;top:0;}
-.index .lantern{;position: absolute;animation: ani_lantern 2s alternate infinite;transform-origin:center top;}
-.index .lantern1{background-image: url(../images/index/lantern1.png);width: .47rem;height: 3.84rem;left: 4.23rem;top:-1.28rem;}
-.index .lantern2{background-image: url(../images/index/lantern2.png);width: .47rem;height: 2.97rem;left: 4.84rem;top:0;animation-delay:.5s;}
-@keyframes ani_lantern{
-    0%{transform: rotate(-3deg);}
-    100%{transform: rotate(3deg);}
-}
-
-.index .ele1{background-image: url(../images/index/ele1.png);width: 1.84rem;height: 1.9rem;position: absolute;top:2.18rem;right: .17rem;}
-.index .logo{background-image: url(../images/index/logo.png);width: 1.78rem;height: .8rem;position: absolute;left:.26rem;bottom: 2.67rem;}
-.index .txt1{background-image: url(../images/index/txt1.png);width: 3.1rem;height: 1.02rem;position: absolute;left:.26rem;bottom: 1.35rem;}
-.index .peo{background-image: url(../images/index/peo.png);width: 7.5rem;height: 11.7rem;position: absolute;left:0;bottom:-.05rem;}
-.index .firework{background-image: url(../images/index/firework.png);width: 1.22rem;height: 1.22rem;position: absolute;left:2.87rem;bottom:6.42rem;animation: ani_firework 2s  infinite linear;}
-@keyframes ani_firework{
-    0%{transform: scale(0);opacity: 1;}
-    60%{transform: scale(1);opacity:.5;}
-    80%{transform: scale(1);opacity:0;}
-    100%{transform: scale(1);opacity:0;}
-}
 
 .guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);}
 .guide .txt{background-image: url(../images/photo/guide.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
