@@ -18,6 +18,7 @@ $(document).ready(function () {
 	var slideaAtiveId;
 	var elelayer;
 	var widthOrg, heightOrg;
+	var first = true;
 
 
 	//----------------------------------------页面初始化----------------------------------------
@@ -66,7 +67,9 @@ $(document).ready(function () {
 		//		icom.fadeOut(loadBox,500);
 		// setTimeout(albumshow,2000);
 		// initswiper();
-
+		$('.first-guide-btn').on('click', function() {
+			icom.fadeOut($('.first-guide'));
+		})
 		$('.guide .btn-close').on("click", guide_hide);
 
 		// $('.myphoto .btn-prev').on('click',btnPrev);//上一步
@@ -74,9 +77,11 @@ $(document).ready(function () {
 		$('.myphoto .btn-bg').on('click', showBg); //选择背景图
 		$('.myphoto .btn-person').on('click', showPerson); // 选择人物
 		$('.myphoto .btn-pattern').on('click', showPattern); // 选择图案
+		$('.myphoto .btn-emoji').on('click', showEmoji); // 选择图案
 		$('.bgClose').on('click', hideBg);
 		$('.personClose').on('click', hidePerson);
 		$('.patternClose').on('click', hidePattern);
+		$('.emojiClose').on('click', hideEmoji);
 		$('.congratulate .img-bg').on('click', confirmBg); //确定一个title
 		$('.congratulate .img-item').on('click', confirmTitle); //确定一个title
 		btnSubmit.on('touchend', btnSubmit_click);
@@ -107,16 +112,20 @@ $(document).ready(function () {
 	}
 	//显示弹框
 	function showBg() {
-		$('.bg').show();
+		icom.fadeIn($('.bg'));
 		console.log('背景弹框显示');
 	}
 	function showPerson() {
-		$('.person').show();
+		icom.fadeIn($('.person'));
 		console.log('人物弹框显示');
 	}
 	function showPattern() {
-		$('.pattern').show();
+		icom.fadeIn($('.pattern'));
 		console.log('图案弹框显示');
+	}
+	function showEmoji() {
+		icom.fadeIn($('.emoji'));
+		console.log('表情弹框显示');
 	}
 	// 隐藏弹框
 	function hideBg() {
@@ -127,6 +136,9 @@ $(document).ready(function () {
 	}
 	function hidePattern() {
 		icom.fadeOut($('.pattern'))
+	}
+	function hideEmoji() {
+		icom.fadeOut($('.emoji'))
 	}
 	var itemList = []; //储存item对象
 	var increaseId = 0; //自增id
@@ -139,7 +151,6 @@ $(document).ready(function () {
 		$('.myphoto-bg').attr({
 			src,
 		});
-		icom.fadeIn($('.myphoto-bg'));
 	}
 	function confirmTitle() {
 		increaseId++;
@@ -152,7 +163,7 @@ $(document).ready(function () {
 		var src = $(this).find("img").attr("src");
 		imgChild = $('<img/>').attr({
 			src: src,
-		}).appendTo(elelayer).addClass("wid" + id);
+		}).appendTo(elelayer).addClass("wid1");
 		widthOrg = elelayer.find("img").width();
 		heightOrg = elelayer.find("img").height();
 		// 初始化参数
@@ -180,6 +191,10 @@ $(document).ready(function () {
 			r: Math.sqrt(widthOrg * widthOrg + heightOrg * heightOrg) / 2 //对角线的半
 		}
 		itemList[itemList.length] = data;
+		if(first) {
+			icom.fadeIn($('.guide'));
+			first = false;
+		}
 	}
 
 

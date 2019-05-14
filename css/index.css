@@ -1,4 +1,10 @@
 /* ---------------------------------------- 默认css针对16:9标准比例屏幕微信----------------------------------------*/
+/* 
+初始界面 200-300
+弹框层级 100-200
+按钮层级 50-100
+最后生层图片层级 200-300
+背景层级 0-50 */
 .hide{display: none;}
 @keyframes progressmove{
     0%{width: 0%;}
@@ -17,19 +23,20 @@
 .choosealbum .swiper-container .swiper-slide-active{box-shadow:0 0 .32rem .13rem rgba(209,187,118,.86);}
 .choosealbum .btnCamera{display: block;background-image: url(../images/btn-submit.png);width: 3.05rem;height: .86rem;margin:.25rem auto 0;}
 
-.myphoto{position: absolute;width: 100%;left: 0;top: 0;}
+.myphoto{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: #f2f4f6;}
+.myphoto .first-guide {width: 100%;height: 100%;background-image: url(../images/guide1.png); background-size: 100% 100%;position: relative;z-index: 250;}
+.myphoto .first-guide .first-guide-btn {position: absolute; background-image: url(../images/button/button3.png);background-size: 100% auto; width: 4rem; height: 1rem; bottom: 2rem; left: 1.75rem}
 .myphoto .photobox{width: 100%}
 .myphoto .photobox .myphoto-bg{position: absolute;width: 100%;left: 0;top: 0;}
 
-.myphoto .btnbox{width: 100%;height: .85rem;position: fixed;left:0;bottom:.2rem;text-align: center;}
+.myphoto .btnbox{width: 100%;height: .85rem;position: fixed;left:0;bottom:.2rem;text-align: center;z-index: 60;}
 /*.myphoto .btnbox .btn-prev{display:inline-block;background-image: url(../images/btn-prev.png);width: 2.5rem;height: .85rem;background-color: rgba(104,10,11,.7);border-radius:.2rem;margin-right: .5rem;}
 .myphoto .btnbox .btn-next{display:inline-block;background-image: url(../images/btn-next.png);width: 2.5rem;height: .85rem;background-color: rgba(104,10,11,.7);border-radius:.2rem;}*/
 .myphoto .btnbox .btn-choose{display:inline-block;background-image: url(../images/photo/btn-choose.png);width: 2.74rem;height: 1.16rem;margin-right: .57rem;}
 .myphoto .btnbox .btn-comp{display:inline-block;background-image: url(../images/photo/btn-comp.png);width: 2.74rem;height: 1.16rem;}
 
 
-
-.bg, .person, .pattern{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0,.8);z-index: 5;}
+.bg, .person, .pattern, .emoji{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0,.8);z-index: 110;}
 .congratulatetitle{
     position: absolute;
     left: 0;
@@ -37,39 +44,37 @@
     width: 100%;
     height: 5rem;
     background: #fff;
+    padding-top: 0.6rem;
     border-radius: .5rem .5rem 0 0;
 }
-.congratulatetitle .choosetitle{
-    width: 100%;
-    height: .5rem;
-    text-align: center;
-    line-height: .5rem;
-    font-size: 0.36rem;
-}
+
 .congratulatetitle .congratulate-btn {
     position: absolute;
     top: .1rem;
     right: .4rem;
-    font-size: .24rem;
-    
+    background-image: url(../images/common/close.png);
+    width: 0.24rem;
+    height: 0.24rem;
+    background-size: 100% 100%;
 }
 .congratulatetitle  .img-wrap {
     overflow-y: scroll;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     height: 4.5rem;
+    -webkit-overflow-scrolling: touch
+}
+.img-wrap::-webkit-scrollbar{
+    display: none
 }
 .congratulatetitle .img-item {
-    flex: 0 0 2.75rem;
-    width: 2.75rem;
-    margin: 0.2rem 0.5rem;  
-    height: 2.75rem;
+    flex: 0 0 2rem;
+    width: 2rem;
+    margin: 0.2rem 0.25rem;
 }
 .congratulatetitle .img-item img {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2rem;
 }
 
 .congratulatetitle .img-bg {
@@ -86,12 +91,12 @@
 .wid3{width: 3.38rem;}
 
 
-.finalphotopage{position: absolute; width: 100%; height: 100%;left: 0; top: 0; z-index: 110;background-color: #fff;}
+.finalphotopage{position: absolute; width: 100%; height: 100%;left: 0; top: 0; z-index: 210;background-color: #fff;}
 .finalphotopage .imgbox{position: absolute; width: 12rem; height: 21.334rem; left: 50%; height: 50%; transform: translate3d(-50%, -50%, 0)}
 .finalphotopage .imgbox img{width: 12rem; height: 21.334rem;}
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
 
-.guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);}
+.guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);z-index:110}
 .guide .txt{background-image: url(../images/photo/guide.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
 .guide .btn-close{background-image: url(../images/photo/guide-close.png);width: 3.21rem;height: .83rem;display: block;margin: 1.05rem auto 0;}
 .guide2 .txt{background-image: url(../images/photo/guide2.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
@@ -108,8 +113,23 @@
 .myphoto .move .resize{position: absolute;right: -.3rem;top: -.3rem;z-index: 2;background-image: url(../images/photo/resize.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
 
 
-.btn-bg,.btn-person,.btn-pattern,.btn-finish {
-    display:inline-block;background:red;width: 1.5rem;height: 1rem;margin-right: .27rem;color: #fff;text-align: center;line-height: 1rem;
+.btn-bg,.btn-person,.btn-pattern,.btn-finish,.btn-emoji {
+    background-size: 100% auto;display:inline-block;width: 1rem;height: 0.77rem;margin-right: .2rem;
+}
+.btn-bg {
+    background-image: url(../images/button/button1.png);
+}
+.btn-person {
+    background-image: url(../images/button/button4.png);
+}
+.btn-pattern {
+    background-image: url(../images/button/button5.png);
+}
+.btn-finish {
+    background-image: url(../images/button/button6.png);
+}
+.btn-emoji {
+    background-image: url(../images/button/button2.png);
 }
 
 

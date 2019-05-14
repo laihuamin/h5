@@ -22,15 +22,19 @@ ibase.load('css/index.css');//无缓存加载文件
 <article style="opacity: 0;">
 
     <section class="myphoto ">
+        <div class="first-guide">
+            <div class="first-guide-btn toStart"></div>
+        </div>
         <div class="photobox">
-            <img src="images/bg/bg1.jpg" class="myphoto-bg hide">
+            <img src="images/bg/bg8.jpg" class="myphoto-bg">
         </div>
         <div class="imgbox "></div>
         <div class="btnbox">
-            <span class="btn-bg">选择背景</span>
-            <span class="btn-person">选择人物</span>
-            <span class="btn-pattern">选择图案</span>
-            <a class="btn-finish btnSubmit">完成</a>
+            <span class="btn-bg"></span>
+            <span class="btn-person"></span>
+            <span class="btn-pattern"></span>
+            <span class="btn-emoji"></span>
+            <a class="btn-finish btnSubmit"></a>
         </div>
 
         <div class="guide hide">
@@ -40,25 +44,8 @@ ibase.load('css/index.css');//无缓存加载文件
         
     </section>
 
-   
-    <!-- <section class="choosealbum  hide">
-        <div class="aligncenter">
-            <p class="loading-pic1"></p>
-            <p class="albumtips"></p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide" style="background-image:url(images/pic1.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(images/pic2.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(images/pic3.png)"></div>
-                  <div class="swiper-slide" style="background-image:url(images/pic4.png)"></div>
-                </div>
-            </div>
-            <a class="btn btnCamera"></a>
-        </div>
-    </section> -->
     <section class="bg congratulate hide">
         <div class="congratulatetitle">
-            <div class="choosetitle">请选择背景</div>
             <div class="congratulate-btn bgClose">关闭</div>
             <div class="img-wrap">
                 <p class="img-bg" data-id="1"><img src="images/bg/bg1.jpg"></p>
@@ -79,8 +66,7 @@ ibase.load('css/index.css');//无缓存加载文件
     </section>
     <section class="person congratulate hide">
         <div class="congratulatetitle">
-            <div class="choosetitle">请选择人物</div>
-            <div class="congratulate-btn personClose">关闭</div>
+            <div class="congratulate-btn personClose"></div>
             <div class="img-wrap">
                 <p class="img-item" data-id="1"><img src="images/person/person1.png" ></p>
                 <p class="img-item" data-id="2"><img src="images/person/person2.png" ></p>
@@ -94,9 +80,25 @@ ibase.load('css/index.css');//无缓存加载文件
             </div>
         </div>
     </section>
+    <section class="emoji congratulate hide">
+        <div class="congratulatetitle">
+            <div class="congratulate-btn emojiClose"></div>
+            <div class="img-wrap">
+                <p class="img-item" data-id="1"><img src="images/emoji/emoji1.png" ></p>
+                <p class="img-item" data-id="2"><img src="images/emoji/emoji2.png" ></p>
+                <p class="img-item" data-id="3"><img src="images/emoji/emoji3.png" ></p>
+                <p class="img-item" data-id="4"><img src="images/emoji/emoji4.png" ></p>
+                <p class="img-item" data-id="5"><img src="images/emoji/emoji5.png" ></p>
+                <p class="img-item" data-id="6"><img src="images/emoji/emoji6.png" ></p>
+                <p class="img-item" data-id="7"><img src="images/emoji/emoji7.png" ></p>
+                <p class="img-item" data-id="8"><img src="images/emoji/emoji8.png" ></p>
+                <p class="img-item" data-id="9"><img src="images/emoji/emoji9.png" ></p>
+                <p class="img-item" data-id="10"><img src="images/emoji/emoji10.png" ></p>
+            </div>
+        </div>
+    </section>
     <section class="pattern congratulate hide">
         <div class="congratulatetitle">
-            <div class="choosetitle">请选择图案</div>
             <div class="congratulate-btn patternClose">关闭</div>
             <div class="img-wrap">
                 <p class="img-item" data-id="1"><img src="images/pattern/pattern1.png" ></p>
