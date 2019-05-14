@@ -84,6 +84,14 @@ $(document).ready(function () {
 		$('.emojiClose').on('click', hideEmoji);
 		$('.congratulate .img-bg').on('click', confirmBg); //确定一个title
 		$('.congratulate .img-item').on('click', confirmTitle); //确定一个title
+		$('.J_restart').on('click', function() {
+			$('.myphoto .myphoto-bg').attr({
+				src: 'images/bg/bg1.jpg'
+			});
+			$('.myphoto .imgbox').empty();
+			$('.myphoto .btnbox').show();
+			icom.fadeOut($(".finalphotopage"), 100);
+		});
 		btnSubmit.on('touchend', btnSubmit_click);
 		// init1();
 		// monitor_handler();
@@ -370,6 +378,7 @@ $(document).ready(function () {
 			// 上传服务器。返回一张绝对地址图片
 			// icom.canvas_send(canvas,image_combine_complete,'loop_test','png');
 			icom.fadeIn($(".finalphotopage"), 100);
+			
 		});
 
 	} //end func
