@@ -33,8 +33,15 @@
     75%{transform: scale(0.95);}
     100%{transform: scale(1);}
 }
-.myphoto .photobox{width: 100%}
-.myphoto .photobox .myphoto-bg{position: absolute;width: 100%;left: 0;top: 0;}
+.myphoto .finanl {
+    width: 100%;
+    height: 13.34rem;
+}
+.myphoto .photobox {
+    height: 100%;
+    position: absolute;width: 100%;left: 0;top: 0;
+}
+.myphoto .photobox .myphoto-bg{height: 100%;width: 100%;}
 
 .myphoto .btnbox{width: 100%;height: .85rem;position: fixed;left:0;bottom:.2rem;text-align: center;z-index: 60;}
 /*.myphoto .btnbox .btn-prev{display:inline-block;background-image: url(../images/btn-prev.png);width: 2.5rem;height: .85rem;background-color: rgba(104,10,11,.7);border-radius:.2rem;margin-right: .5rem;}
@@ -57,11 +64,11 @@
 
 .congratulatetitle .congratulate-btn {
     position: absolute;
-    top: .1rem;
-    right: .4rem;
+    top: .2rem;
+    right: .2rem;
     background-image: url(../images/common/close.png);
-    width: 0.24rem;
-    height: 0.24rem;
+    width: 0.3rem;
+    height: 0.3rem;
     background-size: 100% 100%;
 }
 .congratulatetitle  .img-wrap {
@@ -98,7 +105,7 @@
 .wid3{width: 3.38rem;}
 
 
-.finalphotopage{position: absolute; width: 100%; height: 100%;left: 0; top: 0; z-index: 210;background-color: #fff;}
+.finalphotopage{position: fixed; width: 100%; height: 100%;left: 0; top: 0; z-index: 210;background-color: #fff;}
 .finalphotopage .imgbox{position: absolute; width: 6rem; height: 10.667rem; left: 50%; top: 50%; transform: translate3d(-50%, -50%, 0)}
 .finalphotopage .imgbox img{width: 6rem; height: 10.667rem;}
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
@@ -107,7 +114,6 @@
 .guide .txt{background-image: url(../images/photo/guide.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
 .guide .btn-close{background-image: url(../images/photo/guide-close.png);width: 3.21rem;height: .83rem;display: block;margin: 1.05rem auto 0;}
 .guide2 .txt{background-image: url(../images/photo/guide2.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
-
 
 .myphoto .imgbox{}
 .myphoto .move{position: absolute;left: 0;top:0;z-index: 2;}

@@ -9,8 +9,8 @@ $(document).ready(function () {
 	var btnSubmit = $('a.btnSubmit');
 	var btnCamera = $('a.btnCamera');
 	var imgCanvas, imgLayer;
-	var imgScaleMin = 0.5,
-		imgScaleMax = 2,
+	var imgScaleMin = 0.2,
+		imgScaleMax = 3,
 		imgScaleTimer;
 	var fileInput;
 	var canvasScale = 1;
