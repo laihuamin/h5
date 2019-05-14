@@ -92,8 +92,8 @@
 
 
 .finalphotopage{position: absolute; width: 100%; height: 100%;left: 0; top: 0; z-index: 210;background-color: #fff;}
-.finalphotopage .imgbox{position: absolute; width: 12rem; height: 21.334rem; left: 50%; height: 50%; transform: translate3d(-50%, -50%, 0)}
-.finalphotopage .imgbox img{width: 12rem; height: 21.334rem;}
+.finalphotopage .imgbox{position: absolute; width: 6rem; height: 10.667rem; left: 50%; height: 50%; transform: translate3d(-50%, -50%, 0)}
+.finalphotopage .imgbox img{width: 6rem; height: 10.667rem;}
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
 
 .guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);z-index:110}

@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 	//----------------------------------------页面初始化----------------------------------------
 	icom.init(init); //初始化
-	icom.screenScrollUnable(); //如果是一屏高度项目且在ios下，阻止屏幕默认滑动行为
+	// icom.screenScrollUnable(); //如果是一屏高度项目且在ios下，阻止屏幕默认滑动行为
 
 	function init() {
 		requestAnimationFrame(function () {
@@ -358,12 +358,12 @@ $(document).ready(function () {
 		$('.congratulate').hide();
 		$('.myphoto .btnbox').hide();
 		$(".move").removeClass('active');
-		var shareContent = $(".myphoto"); //需要截图的包裹的DOM 元素
 		html2canvas(document.querySelector(".myphoto"), {
 			logging: false,
 			useCORS: true
 		}).then(function (canvas) {
 			loadBox.hide();
+			console.log(canvas);
 			var base64 = canvas.toDataURL("image/jpeg", 1);
 			$(".imgbox img").attr("src", base64);
 			// $(".imgbox").appendChild(canvas);
