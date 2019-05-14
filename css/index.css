@@ -36,7 +36,7 @@
 .myphoto .btnbox .btn-comp{display:inline-block;background-image: url(../images/photo/btn-comp.png);width: 2.74rem;height: 1.16rem;}
 
 
-.bg, .person, .pattern, .emoji{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0,.8);z-index: 110;}
+.bg, .person, .pattern, .emoji{position: fixed;left: 0; top: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0,.8);z-index: 110;}
 .congratulatetitle{
     position: absolute;
     left: 0;
