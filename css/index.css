@@ -112,9 +112,10 @@
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
 
 .guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);z-index:110}
-.guide .txt{background-image: url(../images/photo/guide.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
+.guide .txt1{background-image: url(../images/photo/guide.png);width: 5.81rem;height: 2.58rem;margin: 1.72rem auto 0}
 .guide .btn-close{background-image: url(../images/photo/guide-close.png);width: 3.21rem;height: .83rem;display: block;margin: 1.05rem auto 0;}
-.guide2 .txt{background-image: url(../images/photo/guide2.png);width: 5.81rem;height: 2.58rem;margin: 4.72rem auto 0}
+.guide .txt2{background-image: url(../images/photo/guide1.png);width: 5.81rem;height: 2.58rem;margin: 0.22rem auto 0}
+.guide .txt3{background-image: url(../images/photo/guide2.png);width: 5.81rem;height: 2.58rem;margin: 0.22rem auto 0}
 
 .myphoto .imgbox{}
 .myphoto .move{position: absolute;left: 0;top:0;z-index: 2;}
@@ -122,8 +123,8 @@
 .myphoto .move.active .close{display: block;}
 .myphoto .move.active .rotate{display: block;}
 .myphoto .move.active .resize{display: block;}
-.myphoto .move .close{position: absolute;left: -.3rem;bottom: -.3rem;z-index: 2;background-image: url(../images/photo/remove.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
-.myphoto .move .rotate{position: absolute;right: -.3rem;top: -.3rem;z-index: 2;background-image: url(../images/photo/rotate.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
+.myphoto .move .close{position: absolute;left: -.3rem;bottom: -.3rem;z-index: 2;background-image: url(../images/photo/remove.png);border-radius: 100%;width: .4rem;height: .4rem;display: none;}
+.myphoto .move .rotate{position: absolute;right: -.3rem;top: -.3rem;z-index: 2;background-image: url(../images/photo/rotate.png);border-radius: 100%;width: .4rem;height: .4rem;display: none;}
 .myphoto .move .resize{position: absolute;right: -.3rem;top: -.3rem;z-index: 2;background-image: url(../images/photo/resize.png);border-radius: 100%;width: .3rem;height: .3rem;display: none;}
 
 
