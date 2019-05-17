@@ -25,7 +25,7 @@
 
 .myphoto{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: #f2f4f6;}
 .myphoto .first-guide {width: 100%;height: 100%;background-image: url(http://h0.hucdn.com/open201920/0456af279140ddfa_750x1334.png); background-size: 100% 100%;position: fixed; left:0; top: 0;z-index: 250;}
-.myphoto .first-guide .first-guide-btn {position: absolute; background-image: url(../images/button/button3.png);background-size: 100% auto; width: 4rem; height: 1rem; bottom: 2rem; left: 1.75rem; animation: btnBreathe 1s infinite linear;}
+.myphoto .first-guide .first-guide-btn {position: absolute; background-image: url(.http://h0.hucdn.com/open201920/373579bb2f81263e_401x102.png);background-size: 100% auto; width: 4rem; height: 1rem; bottom: 2rem; left: 1.75rem; animation: btnBreathe 1s infinite linear;}
 @keyframes btnBreathe{
     0%{transform: scale(1);}
     25%{transform: scale(1.05);}
@@ -108,7 +108,7 @@
 .finalphotopage{position: fixed; bottom: 0; right: 0;left: 0; top: 0; z-index: 210;background-color: #fff;}
 .finalphotopage .imgbox{position: absolute; width: 6rem; height: 10.667rem; left: 50%; top: 1rem; transform: translate3d(-50%, 0, 0)}
 .finalphotopage .imgbox img{width: 6rem; height: 10.667rem;}
-.finalphotopage .restart {position: absolute; background-image: url(../images/button/button7.png);background-size: 100% auto; width: 4rem; height: 1rem; bottom: 0.3rem; left: 1.75rem;}
+.finalphotopage .restart {position: absolute; background-image: url(http://h0.hucdn.com/open201920/adf3fc35e7a9d7f5_401x102.png);background-size: 100% auto; width: 4rem; height: 1rem; bottom: 0.3rem; left: 1.75rem;}
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
 
 .guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);z-index:110}
@@ -132,19 +132,19 @@
     background-size: 100% auto;display:inline-block;width: 1rem;height: 0.77rem;margin-right: .2rem;
 }
 .btn-bg {
-    background-image: url(../images/button/button1.png);
+    background-image: url(http://h0.hucdn.com/open201920/86ff4974b725d336_121x93.png);
 }
 .btn-person {
-    background-image: url(../images/button/button4.png);
+    background-image: url(http://h0.hucdn.com/open201920/b35e742d82a4abfb_121x93.png);
 }
 .btn-pattern {
-    background-image: url(../images/button/button5.png);
+    background-image: url(http://h0.hucdn.com/open201920/c615f50ae043fb29_121x93.png);
 }
 .btn-finish {
-    background-image: url(../images/button/button6.png);
+    background-image: url(http://h0.hucdn.com/open201920/2929971094cee74b_121x93.png);
 }
 .btn-emoji {
-    background-image: url(../images/button/button2.png);
+    background-image: url(http://h0.hucdn.com/open201920/8c8817775029ce39_121x93.png);
 }
 
 
