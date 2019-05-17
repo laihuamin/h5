@@ -24,7 +24,7 @@
 .choosealbum .btnCamera{display: block;background-image: url(../images/btn-submit.png);width: 3.05rem;height: .86rem;margin:.25rem auto 0;}
 
 .myphoto{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: #f2f4f6;}
-.myphoto .first-guide {width: 100%;height: 100%;background-image: url(../images/guide1.png); background-size: 100% 100%;position: fixed; left:0; top: 0;z-index: 250;}
+.myphoto .first-guide {width: 100%;height: 100%;background-image: url(http://h0.hucdn.com/open201920/0456af279140ddfa_750x1334.png); background-size: 100% 100%;position: fixed; left:0; top: 0;z-index: 250;}
 .myphoto .first-guide .first-guide-btn {position: absolute; background-image: url(../images/button/button3.png);background-size: 100% auto; width: 4rem; height: 1rem; bottom: 2rem; left: 1.75rem; animation: btnBreathe 1s infinite linear;}
 @keyframes btnBreathe{
     0%{transform: scale(1);}
@@ -112,10 +112,10 @@
 .finalphotopage .finalphotopage-title {color: #3d3d3d; position: absolute; bottom: 0.02rem; left: 50%; transform: translate3d(-50%, 0, 0)}
 
 .guide{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0,0,0,.7);z-index:110}
-.guide .txt1{background-image: url(../images/photo/guide.png);width: 5.81rem;height: 2.58rem;margin: 1.72rem auto 0}
-.guide .btn-close{background-image: url(../images/photo/guide-close.png);width: 3.21rem;height: .83rem;display: block;margin: 1.05rem auto 0;}
-.guide .txt2{background-image: url(../images/photo/guide1.png);width: 5.81rem;height: 2.58rem;margin: 0.22rem auto 0}
-.guide .txt3{background-image: url(../images/photo/guide2.png);width: 5.81rem;height: 2.58rem;margin: 0.22rem auto 0}
+.guide .txt1{background-image: url(http://h0.hucdn.com/open201920/75060c67d63a74fb_478x176.png);width: 5.81rem;height: 2.58rem;margin: 1.72rem auto 0}
+.guide .btn-close{background-image: url(http://h0.hucdn.com/open201920/3f28042ee42a7890_294x74.png);width: 3.21rem;height: .83rem;display: block;margin: 1.05rem auto 0;}
+.guide .txt2{background-image: url(http://h0.hucdn.com/open201920/8f2e42232af3312d_489x209.png);width: 5.81rem;height: 2.58rem;margin: 0.22rem auto 0}
+.guide .txt3{background-image: url(http://h0.hucdn.com/open201920/ace3a651850b4526_444x209.png);width: 5.81rem;height: 2.58rem;margin: 0.22rem auto 0}
 
 .myphoto .imgbox{}
 .myphoto .move{position: absolute;left: 0;top:0;z-index: 2;}
